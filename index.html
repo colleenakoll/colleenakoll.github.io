@@ -1,18 +1,17 @@
 <p><span style="font-family: verdana, geneva; font-size: x-large;"><strong><span style="color: navy;">Question</span></strong> </span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;">How does a CareLink Monitor receive firmware updates from the network?</span></p>
+<p><span style="font-family: verdana, geneva; font-size: large;">Can the Wire T accessory be used on a secure network such as those found at a hospital or a workplace? </span></p>
 <p><span style="font-family: verdana, geneva; font-size: large;">&nbsp;</span></p>
 <p><span style="font-family: verdana, geneva; font-size: x-large;"><strong><span style="color: navy;">Response</span></strong></span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;">CareLink monitors automatically check for and apply updates from the Firmware Distribution Network (FDN). The FDN check occurs during the monitor maintenance session. After the initial setup transmission and maintenance session, 2490C monitors will continue to check for updates every 15 days after the last successful maintenance session. 2490G/H monitors check and download available updates following a patient manual transmission.</span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;">&nbsp;</span></p>
-<p><strong><span style="font-family: verdana, geneva; font-size: large;">Notes: </span></strong></p>
-<ul style="list-style-position: inside;">
-<li><span style="font-family: verdana, geneva; font-size: large;">2490G/H monitors should not be disconnected immediately following a transmission as the monitor needs time to receive an update via the network. </span></li>
-<li><span style="font-family: verdana, geneva; font-size: large;">2490C monitors perform an evening maintenance session just after midnight following a successful scheduled (wireless) transmission, and a programmable maintenance session around midnight on the 3rd business day following the scheduled transmission receipt date. </span></li>
-<li><span style="font-family: verdana, geneva; font-size: large;">2490C monitors will NEVER perform a maintenance session following a manual transmission. </span></li>
-</ul>
+<p><span style="font-family: verdana, geneva; font-size: large;">We have had success by providing the following security settings to the Hospital or workplace Information Technology (IT) Security Administrator.</span></p>
 <p><span style="font-family: verdana, geneva; font-size: large;">&nbsp;</span></p>
 <p><span style="font-family: verdana, geneva; font-size: x-large;"><strong><span style="color: navy;">Details</span></strong></span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;">N/A</span></p>
+<p><span style="font-family: verdana, geneva; font-size: large;">Here is the technical information on Wire T accessory that IT would need to allow: </span></p>
+<ul style="list-style-position: inside;">
+<li><span style="font-family: verdana, geneva; font-size: large;">The Wire T needs to connect to any Ethernet port that is allowed outbound access to the internet.</span></li>
+<li><span style="font-family: verdana, geneva; font-size: large;">The Wire T will make a Dynamic Host Configuration Protocol (DHCP) request on the local network for an IP address and Domain Name System (DNS) servers.</span></li>
+<li><span style="font-family: verdana, geneva; font-size: large;">The Wire T device will connect to this internet Uniform Resource Locator (URL) backend1.e-device.net (Internet Protocol (IP) address 212.51.178.115) using Secure Sockets Layer (SSL) Transport Layer Security (TLSv1.2).</span></li>
+<li><span style="font-family: verdana, geneva; font-size: large;">The Wire T must be allow outbound on Transmission Control Protocol (TCP) ports 443 through the firewalls.</span></li>
+</ul>
 <p><span style="font-family: verdana, geneva; font-size: large;">&nbsp;</span></p>
 <p><span style="font-family: verdana, geneva; font-size: x-large;"><strong><span style="color: navy;">Related Links</span></strong></span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;"><a title="The CareLink Patient Monitor Upgrade Program" href="http://www.medtronic.com/emails/cvg/carelink/documents/carelink-overview-brochure-sep2015.pdf" target="_blank">The CareLink Patient Monitor Upgrade Program</a>&nbsp;[External Link]</span></p>
+<p><span style="font-family: verdana, geneva; font-size: large;"><a title="KB0000000" href="/kb_view.do?sysparm_article=KB0000000"><u><span style="color: #278efc;">KB0000000</span></u></a> [External Link]</span></p>
