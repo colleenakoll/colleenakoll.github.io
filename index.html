@@ -1,100 +1,36 @@
 <p><span style="font-family: verdana, geneva; font-size: x-large;"><strong><span style="color: navy;">Question</span></strong> </span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;">How do I setup or change CareAlert Notifications for ICD, CRT, or Reveal LINQ patients on CareLink?</span></p>
+<p><span style="font-family: verdana, geneva; font-size: large;">How&nbsp;to update firmware on a 2490 CareLink Monitor?</span></p>
 <p><span style="font-family: verdana, geneva; font-size: large;">&nbsp;</span></p>
 <p><span style="font-family: verdana, geneva; font-size: x-large;"><strong><span style="color: navy;">Response</span></strong></span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;">You can customize how your clinic is notified when the Medtronic CareLink network receives a CareAlert transmission from a wireless device.&nbsp;</span><span style="font-family: verdana, geneva; font-size: large;">&nbsp;</span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;">The Alert Groups tab under CareAlert Notification Setup is used to define wireless alert conditions. &nbsp;Available alerts may vary by geography. Alert conditions can be prioritized by configurable alert group settings: Red Alerts, Yellow Alerts, Website-Only Alerts, and No Alerts (LINQ only). For each alert condition, you can configure clinic alert groups that apply to all patients.</span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;">For individual patients, you can then override the clinic alert groups, as needed, with customized alerts for individual patients. Customized settings are assigned within the CareAlert Notification tab on the Patient Details page.</span></p>
+<p><span style="font-family: verdana, geneva; font-size: large;">CareLink monitors automatically check for and apply updates from the Firmware Distribution Network (FDN). The FDN check occurs during the monitor maintenance session which varies by monitor model.</span></p>
 <p><span style="font-family: verdana, geneva; font-size: large;">&nbsp;</span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;"><strong>Notes</strong>:</span></p>
+<p><span style="font-family: verdana, geneva; font-size: large;"><span style="text-decoration: underline;">2490C</span>:</span></p>
+<p><span style="font-family: verdana, geneva; font-size: large;">After the initial setup transmission and maintenance session, the monitor will continue to check for updates at least every 15 days after the last successful maintenance session.</span></p>
+<p><span style="font-family: verdana, geneva; font-size: large;">&nbsp;</span></p>
+<p><span style="font-family: verdana, geneva; font-size: large;"><span style="text-decoration: underline;">2490G/H</span>:</span></p>
+<p><span style="font-family: verdana, geneva; font-size: large;">The monitor will check and download any available updates following a patient manual transmission. The patient can also force a firmware check without sending a transmission by doing a push-to-update. See Details section for steps to force an FDN check.</span></p>
+<p><span style="font-family: verdana, geneva; font-size: large;">&nbsp;</span></p>
+<p><strong><span style="font-family: verdana, geneva; font-size: large;">Notes: </span></strong></p>
 <ul style="list-style-position: inside;">
-<li><span style="font-family: verdana, geneva; font-size: large;">User MUST HAVE Administrative Privileges equal to&nbsp;Complete Privileges to configure CareAlert Notifications for your clinic.</span></li>
-<li><span style="font-family: verdana, geneva; font-size: large;">CareAlert notifications require that the patient home monitor is programmed via the Medtronic programmer to &ldquo;Yes.&rdquo; Alerts must be programmed in CRT/ICDs.<br /></span></li>
-<li><span style="font-family: verdana, geneva; font-size: large;">LINQ devices do not require home monitoring to be programmed to &ldquo;Yes&rdquo;. Alerts for LINQ devices are controlled solely on CareLink.</span></li>
+<li><span style="font-family: verdana, geneva; font-size: large;">2490G/H monitors should not be disconnected immediately following a transmission as the monitor needs time to receive an update via the network. </span></li>
+<li><span style="font-family: verdana, geneva; font-size: large;">2490C monitors perform an evening maintenance session just after midnight following a successful scheduled (wireless) transmission, and a programmable maintenance session around midnight on the 3rd business day following the scheduled transmission receipt date. </span></li>
+<li><span style="font-family: verdana, geneva; font-size: large;">2490C monitors will NEVER perform a maintenance session following a manual transmission. </span></li>
 </ul>
 <p><span style="font-family: verdana, geneva; font-size: large;">&nbsp;</span></p>
 <p><span style="font-family: verdana, geneva; font-size: x-large;"><strong><span style="color: navy;">Details</span></strong></span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;"><img style="align: baseline;" title="" src="/sys_attachment.do?sys_id=ffe85334376dcb40e23d2863b3990e9f" alt="" align="baseline" border="" hspace="" vspace="" /></span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;">To configure <u>clinic-wide</u> CareAlert condition groups on CareLink:</span></p>
-<ul>
-<li><span style="font-family: verdana, geneva; font-size: large;">Open the Manage My Clinic page. If your clinic is in a network, select the appropriate clinic from the Clinic list.</span></li>
-<li><span style="font-family: verdana, geneva; font-size: large;">Under CareAlert Notification Setup, select Alert Groups.</span></li>
-<li><span style="font-family: verdana, geneva; font-size: large;">Select Display Alert Group Conditions to view and manage ICD Wireless Device Alert Conditions OR Reveal LINQ Device Alert Conditions.</span></li>
-<li><span style="font-family: verdana, geneva; font-size: large;">For each Clinical Management Alert listed, select Red Alerts, Yellow Alerts, Website-only Alerts, or No Alerts (LINQ only).<br /></span></li>
-<li><span style="font-family: verdana, geneva; font-size: large;">For LINQ devices only</span>
-<ul>
-<li><span style="font-family: verdana, geneva; font-size: large;">For AT/AF Daily Burden, enter the threshold for cumulative Time in AT/AF.<br /></span></li>
-<li><span style="font-family: verdana, geneva; font-size: large;">For Average Ventricular Rate during AT/AF, enter the threshold for cumulative Time in AT/AF above a specified average rate.</span></li>
-</ul>
-</li>
-<li><span style="font-family: verdana, geneva; font-size: large;">Click Save Changes.</span></li>
-</ul>
-<p><span style="font-family: verdana, geneva; font-size: large;"><img style="align: baseline;" title="" src="/sys_attachment.do?sys_id=a2044d154fa2ba00aebb843e0210c7a6" alt="" width="855" height="334" align="baseline" border="" hspace="" vspace="" />&nbsp;</span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;">&nbsp;</span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;">To configure <u>patient-specific</u> CareAlert condition groups on CareLink:</span></p>
-<ul>
-<li><span style="font-family: verdana, geneva; font-size: large;">Select the Manage My Patients page.</span></li>
-<li><span style="font-family: verdana, geneva; font-size: large;">Search or select a patient from the Patient List.</span></li>
-<li><span style="font-family: verdana, geneva; font-size: large;">Select the CareAlert Notification tab.</span></li>
-<li><span style="font-family: verdana, geneva; font-size: large;">Select Override Clinic&rsquo;s Alert Groups and customize for this patient.</span></li>
-<li><span style="font-family: verdana, geneva; font-size: large;">For each Clinical Management Alert listed, select Red Alerts, Yellow Alerts, Website-only Alerts, or No Alerts (LINQ only).<br /></span></li>
-<li><span style="font-family: verdana, geneva; font-size: large;">For LINQ devices only</span>
-<ul>
-<li><span style="font-family: verdana, geneva; font-size: large;">For AT/AF Daily Burden, enter the threshold for cumulative Time in AT/AF.<br /></span></li>
-<li><span style="font-family: verdana, geneva; font-size: large;">For Average Ventricular Rate during AT/AF, enter the threshold for cumulative Time in AT/AF above a specified average rate.<br /></span></li>
-</ul>
-</li>
-<li><span style="font-family: verdana, geneva; font-size: large;">Click Save.</span></li>
-</ul>
+<p><span style="font-family: verdana, geneva; font-size: large;">The monitor will show successfully updated at the maintenance session following the successful session. The wireless monitor will NEVER receive the firmware update with the manual transmission. The wireless monitors require an initial set-up transmission. Once this is completed the monitor should remain connected to AC power and connected to the telephone jack.</span></p>
 <p>&nbsp;</p>
-<p><span style="font-size: large; font-family: verdana, geneva;">ICD Wireless Device Alert Conditions</span></p>
-<p><span style="font-size: large; font-family: verdana, geneva;"><img style="align: baseline;" title="" src="/sys_attachment.do?sys_id=ffe85334376dcb40e23d2863b3990e9f" alt="" align="baseline" border="" hspace="" vspace="" /></span></p>
+<p><span style="font-family: verdana, geneva; font-size: large;">PUSH-TO-UPDATE</span></p>
+<p><span style="font-family: verdana, geneva; font-size: large;">Step-by-Step:</span></p>
+<ul style="list-style-position: inside;">
+<li><span style="font-family: verdana, geneva; font-size: large;">Keep telemetry head away from implanted device. Suggest leaving it inside the monitor.</span></li>
+<li><span style="font-family: verdana, geneva; font-size: large;">Press and hold the power button on the monitor down. Hold down approximately 20 seconds. Green power light will flash for the first 10 seconds; the first telemetry light will flash for the next 10 seconds.</span></li>
+<li><span style="font-family: verdana, geneva; font-size: large;">Monitor will bypass telemetry lights and move directly to the sending phase.</span></li>
+<li><span style="font-family: verdana, geneva; font-size: large;">Green light next to phone will come on. The patient can now release the power button.</span></li>
+<li><span style="font-family: verdana, geneva; font-size: large;">Monitor will dial out as in a normal transmission.</span></li>
+</ul>
 <p><span style="font-family: verdana, geneva; font-size: large;">&nbsp;</span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;">SET UP RED OR YELLOW CAREALERT NOTIFICATION METHODS<br />You can specify daytime, after-hours and holiday notification methods for Red or Yellow CareAlerts for your clinic. Red or Yellow CareAlert notifications are used for Conexus wireless devices only. All Red alerts will trigger a color-coded website notification in the Alerts column on the transmission list and a description in the Event Summary column. Alerts are defined as red, yellow, or website only in the Alert Groups tab. You cannot set up customized notification methods for individual patients until your default notification methods have been set up on this screen.&nbsp;</span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;"><img style="align: baseline;" title="" src="/sys_attachment.do?sys_id=2004ab7c376dcb40e23d2863b3990eb8" alt="" align="baseline" border="" hspace="" vspace="" /></span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;">Step-by-step:</span></p>
-<ul style="list-style-position: inside;">
-<li><span style="font-family: verdana, geneva; font-size: large;">Open the Manage My Clinic page.</span></li>
-<li><span style="font-family: verdana, geneva; font-size: large;">Under CareAlert notification setup, select Red or Yellow Alert Clinic Notification.</span></li>
-<li><span style="font-family: verdana, geneva;"><span style="font-size: large;">In the Daytime Hours Notification Methods section, choose how you would like to be notified during clinic&nbsp;</span><span style="font-size: large;">business hours and complete all the related contact information boxes for each method.</span></span></li>
-<li><span style="font-family: verdana, geneva;"><span style="font-size: large;">In the After-Hours and Holiday Notification Methods section, choose how you would like to be notified after hours&nbsp;</span><span style="font-size: large;">and on holidays.</span></span></li>
-<li><span style="font-family: verdana, geneva; font-size: large;">Click Save.<img id="pasted_img_2e462d402e46a8802e46dfc02e46d260" src="/sys_attachment.do?sys_id=6a04a3bc376dcb40e23d2863b3990ea1" alt="" width="0" height="0" /><img id="pasted_img_216130b02161e1a02161aaf02161c050" src="/sys_attachment.do?sys_id=e3042b7c376dcb40e23d2863b3990ebe" alt="" width="0" height="0" /></span></li>
-</ul>
-<p><span style="font-family: verdana, geneva; font-size: large;"><img style="align: baseline;" title="" src="/sys_attachment.do?sys_id=46abdf74376dcb40e23d2863b3990e50" alt="" align="baseline" border="" hspace="" vspace="" /></span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;">SET UP NOTIFICATION HOURS<br />CareAlert notification hours can be set up for normal business hours, after-hours, and holidays. You must have Administrative Privileges equal to Complete Privileges to configure notification hours for your clinic. Holiday schedules need to be set up for the entire year and can be set up in advance for multiple years. The optional CareAlert Notification After-Hours and Holiday Notification Message Delay feature delays notification of Red and Yellow alerts from Conexus wireless devices to your clinic that occur after-hours or on holidays. Transmissions that meet the established alert conditions display on the CareLink website, but your clinic will not receive the advanced alert notification until the delay period passes.</span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;"><img style="align: baseline;" title="" src="/sys_attachment.do?sys_id=83dc53f4376dcb40e23d2863b3990e75" alt="" align="baseline" border="" hspace="" vspace="" /></span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;">Step-by-step:</span></p>
-<ul style="list-style-position: inside;">
-<li><span style="font-family: verdana, geneva; font-size: large;">Open the Manage My Clinic page.</span></li>
-<li><span style="font-family: verdana, geneva; font-size: large;">Under CareAlert notification setup, select Notification Hours.</span></li>
-<li><span style="font-family: verdana, geneva; font-size: large;">Select each normal business day for your clinic from the Daytime Hours section. Any time set outside the hours listed in the Daytime Hours section is considered After-Hours. For each business day, use the From box to enter the time that your clinic opens and the To box to enter the time that your clinic closes.</span></li>
-<li><span style="font-family: verdana, geneva; font-size: large;">To delay Red or Yellow Advanced CareAlert notifications for events that occur after-hours or on holidays, select an option from the After-Hours and Holiday Notification Message Delay section.</span>
-<ul>
-<li><span style="font-family: verdana, geneva; font-size: large;">To delay notification of Red Alerts, select Delay sending my clinic notification methods for Red Alert transmissions from the Red Alerts section. Select the start time to delay notification transmissions from the Delay notification messages received after menu. Select the end time from the Until the next day at menu.</span></li>
-<li><span style="font-family: verdana, geneva; font-size: large;">To delay notification of Yellow Alerts, select Delay sending my clinic notification methods for Yellow Alert transmissions from the Yellow Alerts section. Select the start time to delay notification transmissions from the Delay notification messages received after menu. Select the end time from the Until the next day at menu.</span></li>
-</ul>
-</li>
-<li><span style="font-family: verdana, geneva; font-size: large;">To specify clinic holidays, enter a Holiday Name in the Holidays section. Click Add another Holiday to add additional holidays when your clinic is not open. Select a date for each holiday from the Date menu.</span></li>
-<li><span style="font-family: verdana, geneva; font-size: large;">Click Save.</span></li>
-</ul>
-<p><span style="font-family: verdana, geneva;">&nbsp;</span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;">TEST NOTIFICATION METHODS<br />You can test the optional notification methods set up for Red and Yellow CareAlert notifications. This test verifies that you have entered the information correctly and that the notifications transmit properly. You must have Administrative Privileges equal to Complete Privileges to test notification methods.</span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;"><img style="align: baseline;" title="" src="/sys_attachment.do?sys_id=3e3f5b78376dcb40e23d2863b3990edf" alt="" align="baseline" border="" hspace="" vspace="" /></span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;">&nbsp;Step-by-step:</span></p>
-<ul style="list-style-position: inside;">
-<li><span style="font-family: verdana, geneva;"><span style="font-size: large;">Open the Manage My Clinic&nbsp;</span><span style="font-size: large;">page.</span></span></li>
-<li><span style="font-family: verdana, geneva;"><span style="font-size: large;">Under CareAlert notification&nbsp;</span><span style="font-size: large;">setup, select either the Red&nbsp;</span><span style="font-size: large;">Alert Clinic Notification or&nbsp;</span><span style="font-size: large;">Yellow Alert Clinic Notification&nbsp;</span><span style="font-size: large;">link.</span></span></li>
-<li><span style="font-family: verdana, geneva;"><span style="font-size: large;">Click the Test Notification&nbsp;</span><span style="font-size: large;">Methods link for either the&nbsp;</span><span style="font-size: large;">Daytime Hours Notification&nbsp;</span><span style="font-size: large;">Methods or After-Hours and&nbsp;</span><span style="font-size: large;">Holiday Notification Methods.</span></span></li>
-<li><span style="font-family: verdana, geneva;"><span style="font-size: large;">The system sends a test&nbsp;</span><span style="font-size: large;">CareAlert notification&nbsp;</span><span style="font-size: large;">message to the destination&nbsp;</span><span style="font-size: large;">specified.</span></span></li>
-</ul>
-<p><span style="font-family: verdana, geneva;">&nbsp;</span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;">CAREALERT NOTIFICATIONS FOR REVEAL LINQ ICM<br />Consider enabling the following CareAlert notifications to receive information that may be near term or immediately actionable in your care plan for each patient. The decision to enable CareAlert notifications should be weighed against the work flow of your clinic to receive and analyze reports. Data collected wirelessly during the month is available on each patient&rsquo;s automatically generated Summary Report.</span></p>
-<p><span style="font-family: verdana, geneva;"><strong style="font-size: x-large;"><span style="color: navy;"><img style="align: baseline;" title="" src="/sys_attachment.do?sys_id=213023b8376dcb40e23d2863b3990e54" alt="" align="baseline" border="" hspace="" vspace="" /></span></strong></span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;">REVEAL LINQ WIRELESS DEVICE ALERT CONDITIONS</span><br /><span style="font-family: verdana, geneva;"><span style="font-size: large;">Any alert condition group setting may be overridden&nbsp;</span><span style="font-size: large;">for an individual patient. Customized settings are assigned&nbsp;</span><span style="font-size: large;">within the Patient Profile.</span></span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;"><img style="align: baseline;" title="" src="/sys_attachment.do?sys_id=ffe85334376dcb40e23d2863b3990e9f" alt="" align="baseline" border="" hspace="" vspace="" /></span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;">See Related Links section for additional internal articles regarding CareAlerts on CareLink.</span></p>
+<p><span style="font-family: verdana, geneva; font-size: large;"><strong>Note:</strong> These steps assume the monitor is set up with batteries, plugged into phone jack, and dial prefix switch is set properly.</span></p>
 <p><span style="font-family: verdana, geneva; font-size: large;">&nbsp;</span></p>
 <p><span style="font-family: verdana, geneva; font-size: x-large;"><strong><span style="color: navy;">Related Links</span></strong></span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;"><a title="Recommended LINQ CareAlert Settings" href="/kb_view.do?sysparm_article=KB0010525&amp;sysparm_nameofstack=kbpop&amp;sysparm_kb_search_table=u_interaction"><u>Recommended LINQ CareAlert Settings</u></a> [Internal Article]</span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;"><u><a title="Clinic notification of LINQ CareAlerts" href="/kb_view.do?sysparm_article=KB0011280&amp;sysparm_nameofstack=kbpop&amp;sysparm_kb_search_table=u_interaction">Clinic notification of CareAlerts</a></u> [Internal Article]</span></p>
-<p><span style="font-family: verdana, geneva; font-size: large;"><u><a title="Changing LINQ CareAlerts for a satellite clinic" href="/kb_view.do?sysparm_article=KB0011080&amp;sysparm_nameofstack=kbpop&amp;sysparm_kb_search_table=u_interaction">Changing CareAlerts for a satellite clinic</a></u><span style="font-size: large;"> [Internal Article]</span></span><span style="font-family: verdana, geneva; font-size: large;"><br /></span></p>
+<p><span style="font-family: verdana, geneva; font-size: large;"><span style="text-decoration: underline;"><a title="The CareLink Patient Monitor Upgrade Program" href="http://www.medtronic.com/emails/cvg/carelink/documents/carelink-overview-brochure-sep2015.pdf" target="_blank">The CareLink Patient Monitor Upgrade Program</a></span>&nbsp;[External Link]</span></p>
